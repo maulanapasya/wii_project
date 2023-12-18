@@ -17,9 +17,14 @@ class DashboardActivity : AppCompatActivity() {
         FirebaseFirestore.getInstance()
     }
 
+    //deklarasi variabel untuk menyimpan nama pengguna pada sesi login
+    private var userName: String? = null
+
     private fun updateUIWithUserProfile(userProfile: UserProfile){
         val welcomeTextView = findViewById<TextView>(R.id.welcome_text)
         welcomeTextView.text = getString(R.string.welcome_message, userProfile.userName)
+        //menyimpan nama pengguna dalam variabel anggota
+        userName = userProfile.userName
     }
 
     private fun loadUserProfile() {
@@ -43,8 +48,11 @@ class DashboardActivity : AppCompatActivity() {
 
         val mulaiShiftButton = findViewById<Button>(R.id.mulai_shift_button)
         mulaiShiftButton.setOnClickListener {
+            //inisialisasi nama user
+            val currentUserName = userName
             //intent memulai ke transaction activity
             val intent = Intent(this,TransactionActivity::class.java)
+            intent.putExtra("EXTRA_USER_NAME", currentUserName)
             startActivity(intent)
             finish()
         }

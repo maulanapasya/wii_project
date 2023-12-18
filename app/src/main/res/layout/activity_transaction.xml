@@ -7,17 +7,32 @@
     android:background="@color/red"
     tools:context="com.android.warmindo_inspirasi_indonesia.TransactionActivity">
 
-<!--  ### LOGO ###  -->
+<!--  ### LOGO dan PROFIL ###  -->
     <ImageView
         android:id="@+id/image1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/indomie_illustration"
-        android:layout_margin="20dp"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Selamat bekerja,\n-nama-"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sequel_sans_book_body"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/image1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image1"
+        app:layout_constraintBottom_toBottomOf="@id/image1" />
 
-<!--  ### PROFIL ###  -->
+
+    <!--  ### Waktu shift ###  -->
     <androidx.cardview.widget.CardView
         android:id="@+id/layout1"
         android:layout_width="match_parent"
@@ -75,14 +90,16 @@
                 android:layout_gravity="center_vertical"
                 android:background="@color/white"
                 android:layout_weight="1"
-                android:text="Sedang dimasak"/>
+                android:text="Sedang dimasak"
+                android:fontFamily="@font/sequel_sans_bold_head"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:text="Tersaji"/>
+                android:text="Tersaji"
+                android:fontFamily="@font/sequel_sans_bold_head"/>
         </LinearLayout>
 
     <!--  ### TRANSAKSI ON GOING ###  -->
@@ -100,7 +117,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meja no. 18"/>
+                    android:text="A1 (Meja 1, lantai 1, Warung 1)"
+                    android:fontFamily="@font/sequel_sans_bold_head"/>
             </ScrollView>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
