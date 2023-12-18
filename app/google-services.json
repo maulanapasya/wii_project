@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "26662730367",
+    "project_id": "wii-project-294b7",
+    "storage_bucket": "wii-project-294b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26662730367:android:0d2840e9dd328b90b29d4a",
+        "android_client_info": {
+          "package_name": "com.android.project_jiorji"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDgFNHcMJZZgNek3iFxpVRE0PSASTF0pI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26662730367:android:70025c57d74026fcb29d4a",
+        "android_client_info": {
+          "package_name": "com.android.warmindo_inspirasi_indonesia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDgFNHcMJZZgNek3iFxpVRE0PSASTF0pI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
